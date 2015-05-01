@@ -3,11 +3,11 @@
 # Merges subtitles from 2 files into a third one.
 #
 # 2.0: use_ts option added to look at the time stamps and merge using them. Logic is still kept simple.
-# 1.0: simple merge. don't change any times. Assumes blank lines at end
+# 1.0: simple merge. don't change any times. Assumes blank lines at end.
 #
 # 1
 # 00:00:01,791 --> 00:00:04,104
-# subtitles by ion1010
+# First subtitle
 #
 # 2
 # 00:001:06,145 --> 00:01:07,150
