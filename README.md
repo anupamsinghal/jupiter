@@ -17,7 +17,8 @@ Checks and notifies on available substitute teacher positions in the Aesop syste
 I use [Pushover](https://pushover.net/) ($5 for ios) for notifications, but it can be any email address.
 
 To run, you can setup an hourly cron job:
-0 * * * * ./check.sh userid pin from@email to@email
+
+`0 * * * * ./check.sh userid pin from@email to@email`
 
 
 ### How do I get set up? ###
