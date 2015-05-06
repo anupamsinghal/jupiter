@@ -14,10 +14,14 @@ Merges subtitles from 2 files in the SubRip format. Built for someone learning a
 
 Checks and notifies on available substitute teacher positions in the Aesop system.
 
-I use Pushover for notifications, but it can be any email address.
+I use [Pushover](https://pushover.net/) ($5 for ios) for notifications, but it can be any email address.
+
+To run, you can setup an hourly cron job:
+
+`0 * * * * ./check.sh userid pin from@email to@email`
+
 
 ### How do I get set up? ###
 
 Needs python 2.7.3+
-
 
