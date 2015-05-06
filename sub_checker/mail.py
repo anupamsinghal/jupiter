@@ -27,7 +27,7 @@ with open("body.json") as data_file:
 
 #print new_body
 userid=sys.argv[2]
-pid=sys.argv[3]
+pin=sys.argv[3]
 new_body += "\n\nhttps://sub.aesoponline.com/Login/RedirectLogin?userId=%s&pin=%s&remember=false&pswd=&loginBaseUrl=www.aesoponline.com\n" % (userid, pin)
 
 # Open a plain text file for reading.  For this example, assume that
@@ -35,16 +35,16 @@ new_body += "\n\nhttps://sub.aesoponline.com/Login/RedirectLogin?userId=%s&pin=%
 # Create a text/plain message
 msg = MIMEText(new_body)
 
-from = sys.argv[4]
+sender = sys.argv[4]
 to = sys.argv[5]
 msg['Subject'] = sys.argv[1] + " Available Position(s)"
-msg['From'] = from
+msg['From'] = sender
 msg['To'] = to
 
 # Send the message via our own SMTP server, but don't include the
 # envelope header.
 s = smtplib.SMTP('localhost')
-s.sendmail(from, [to], msg.as_string())
+s.sendmail(sender, [to], msg.as_string())
 s.quit()
 
 print("mail sent")
